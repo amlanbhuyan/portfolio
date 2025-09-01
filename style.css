@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(135deg, #405569, #1a1a1a);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+}
+
+/*Nav-Bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1450px;
+    margin: auto;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #e67e22;
+}
+
+
+.home {
+    text-align: center;
+    padding: 3rem 1rem;
+    flex: 1;
+}
+
+.profile-pic {
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #e67e22;
+}
+
+.home h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem
+}
+
+.home h2 span {
+    color: #e67e22;
+}
+
+.tagline {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #e67e22;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #cf6d17;
+}
+
+/*Skills Strip*/
+.skills-strip {
+    margin-top: 2rem;
+    font-size: 2rem;
+    display: block;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.skills-strip i{
+    padding: 1.5px;
+    color: #e67e22;
+    transition: transform 0.3s;
+}
+
+.skills-strip i:hover {
+    transform: scale(1.2);
+}
+
+
+/*Footer*/
+footer {
+    background: #1a1a1a;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* This will push the footer to the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+footer p{
+    margin-bottom: 0.3rem;
+}
+.socials a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+.socials a:hover {
+    color: #e67e22;
+}
+
+
+/*Mobile Responsive*/
+@media (max-width: 568px){
+    .nav-links {align-items: center;}
+}
+
+
+
+
+/*About Page*/
+
+.about {
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+.about h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #cf6d17;
+}
+
+.about p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #ddd;
+}
+
+/*Highlight Section*/
+
+.highlights {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.highlights div{
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+.highlights div:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+}
+.highlights i {
+    color: #e67e22;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 568px){
+    .nav-links {align-items: center;}
+}
+
+
+
+/*Contact Page*/
+
+.contact {
+    padding: 3rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-info {
+    float: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+.contact-info i {
+    color: #e67e22;
+    margin-right: 0.5rem;
+}
+.contact-form {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px slid #ccc;
+    font-family: "Rubik", "Space Grotesk", sans-serif;
+}
+
+.contact-form button {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact-form button:hover {
+    background-color: #cf6f1a;
+}
+
+/*Skill Page*/
+
+.skill-head{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.skills-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.skill {
+    margin-bottom: 1.8rem;
+}
+
+.skill-title {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar {
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 15px;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.html {width: 90%; background: #e67e22;}
+.css  {width: 80%; background: #3498db;}
+.js {width: 75%; background: #f1c40f; color: #2c3e50;}
+.react {width: 70%; background: #61dafb; color: #2c3e50;}
+.node {width: 65%; background: #2ecc71;}
+.db {width: 60%; background: #9b59b6;}
+
+
+
+/*Projects*/
+
+.projects {
+    padding: 2rem 1rem;
+    max-width: 1250px;
+    margin: auto;
+    text-align: center;
+}
+
+.projects h1 {
+    
+    margin-bottom: 0.7rem;
+}
+
+.projects p {
+    color: #ddd;
+} 
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: -4rem;
+}
+
+.project-card {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 5px 5px #e67e22;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px #cf6d17
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+    color: beige;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #e67e22;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-card a:hover {
+    color: #cf6f1a;
+}
+
+
+/*Mobile Responsive*/
+@media (max-width: 768px){
+    .nav-links {align-items: center;}
+    .projects p {color: #ddd; padding-bottom: 4rem;}
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Amlan Kumar Bhuyan | Portfolio</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("xNyTar1XWz1y0AI1l");
+    })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Amlan</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out!</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div><i class="fa fa-envelope"></i>amlankumarbhuyan007@gmail.com</div>
+                <div><i class="fa fa-phone"></i>+91 8168128894</div>
+                <div><i class="fa fa-location-dot"></i>Bhubaneswar, Odisha, India</div>
+            </div>
+        
+            <form action="mailto:amlankumarbhuyan007@gmail.com" class="contact-form" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" id="name" required>
+                <input type="email" name="email" placeholder="Your E-mail" id="email" required>
+                <input type="text" name="subject" placeholder="Your Subject" id="subject" required>
+                <textarea name="message" rows="5" placeholder="Your Message" id="message" required></textarea>
+
+                <button type="submit" onclick="sendMail()"><i class="fa fa-paper-plane"> Send Message</i></button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Amlan Kumar Bhuyan</p>
+        <div class="socials">
+            <a href="https://github.com/amlanbhuyan" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/amlan-kumar-bhuyan-22999a250/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
